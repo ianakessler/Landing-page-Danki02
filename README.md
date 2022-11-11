@@ -10,5 +10,5 @@
  
  <h2> About: </h2>
  <p> Single page landing page made for praticing, fully responsive, using Javascript for creating dinamicly the elements for the website and interactions.
- You can visit by <a href="" target="_blank"> clicking here.</a></p>
+ You can visit by <a href="https://ianakessler.github.io/Landing-page-Danki02/pages/" target="_blank"> clicking here.</a></p>
 </div>
