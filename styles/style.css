@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+/*           TAGS REUTILIZAVEIS              */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{ clear: both;}
+/*           TAGS REUTILIZAVEIS              */
+
+
+/*           resets de elementos              */
+
+a{text-decoration: none;}
+
+input:focus{outline: none;}
+
+/*           resets de elementos              */
+
+
+/*============================= <HEADER> ==================================*/
+
+header{
+    
+    background-color: #D6D6D6;
+    padding: 10px 2% 40px 2%;
+}
+
+#logo1{
+    float: left;
+    width: 160px;
+    height: 52px;
+
+    background-image: url(../images/logo1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ 
+}
+
+#logo2{
+    float: right;
+    width: 160px;
+    height: 44.8px;
+
+    background-image: url(../images/logo2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+/*============================= <HEADER> ==================================*/
+
+/*============================= <SECTION> ==================================*/
+
+
+.cover-form{
+    width: 100%;
+    padding: 0;
+    background-image: linear-gradient(to top, transparent ,#F2845C10, #F2986310, #84a9bf10, #4A6D8C10, #253b5910, #D6D6D6);
+}
+
+.banner{
+    height: 560px;
+    position: relative;
+    width: 96%;
+
+    background-image: url(../images/bg-form.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-container{
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
+    
+    height: 105%;
+    width: 400px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.498);
+
+    background: rgba(255, 255, 255, 0.501);
+    border-radius: 8px;
+}
+
+.form-container h2{
+    padding: 20px 15px;
+    font-weight: normal;
+    background-color: rgba(210, 210, 210, 0.604);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  
+}
+.form-container form{
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form p{
+    font-size: 13px;
+    color: #2e2e2e;
+}
+
+.form-container form .input-area{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 45px;
+    line-height: 45px; /*padding tem incompatibilidade com alguns navegadores*/
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.303);
+}
+
+.form-container form input[type=submit]{
+    width: 50%;
+    height: 45px;
+    background-color: #033c508b;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+
+    box-shadow: 0px 0px 4px 1px rgba(242, 151, 99, 0.305);
+}
+
+
+
+.form-container form input[type=submit]:hover{
+    transition: 1s;
+    background-color: #033c50f0;
+ 
+}
+
+
+#enviar
+{
+    text-align: center;
+}
+
+.input-wraper:not(:first-child){ 
+    margin-top: 40px;
+    /* selecionous todas que nao sao a primeira */
+}
+
+.input-wraper:last-child{
+    margin-top: 17px;
+}
+
+/*              SESSAO CHAMADA            */
+
+.chamada{
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    max-width: ;
+    
+}
+
+.chamada .container{
+    background-color: #29526d;
+    padding: 70px 0 50px 0;
+    
+}
+
+.chamada h2{
+    width: 96%;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    max-width: 700px;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+.chamada p{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/*====================================================*/
+
+/*======================MOSAICO==============================*/
+
+
+.flex-mosaico{
+    display: flex;
+    margin-top: 3px;
+    background-color: rgba(199, 199, 199, 0.092);
+
+}
+
+
+
+.flex-mosaico:nth-last-of-type(odd){
+    flex-direction: row-reverse;
+}
+
+.item1{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.356);
+}
+
+.item2{
+    width: 40%;
+    padding: 60px 40px;
+    color: rgb(55, 55, 55);
+    line-height: 1.7em;
+    
+}
+
+/*======================MOSAICO==============================*/
+
+
+/*======================FOOTER=============================*/
+
+footer{
+    margin-top: 90px;
+    width: 100%;
+    border-top: 1px solid rgba(123, 123, 123, 0.516);
+    text-align: center;
+    padding-top: 10px;
+
+    color: rgb(140, 140, 140);
+    font-size: 12px;
+}
+
+
+
+
+
+
+

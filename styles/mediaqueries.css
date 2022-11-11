@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+
+
+
+@media screen and (max-width: 420px){
+
+    header{
+        text-align: center;
+    }
+
+    #logo1, #logo2{
+        display: inline-block;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .cover-form{
+        height: auto;
+        text-align: center;
+    }
+    .form-container{
+        height: auto;
+        position: static;
+        display: inline-block;
+        width: 96%;
+        max-width: 400px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 738px){
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item1{
+        padding-top: 80%;
+        width: 96%;
+        margin: 0 auto;
+    }
+    .item2{
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .chamada{
+        width: 96%;
+        margin: 0 auto;
+    }
+}
